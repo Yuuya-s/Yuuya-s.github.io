@@ -1,13 +1,17 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
- body{
+
+body {
     background-image: linear-gradient(to right, red, blue);
- }
- .container{background-color: aqua;
-    width: 25%;
-    margin: 120px auto; 
+}
+
+.container {
+    background-color: aqua;
+    width: 100%; /* Change width to 100% to make it responsive */
+    max-width: 400px; /* Add a max-width to limit container size */
+    margin: 120px auto;
     padding: 10px;
     box-sizing: border-box;
     box-shadow: 10px 10px 5px rgb(82, 21, 3);
@@ -17,51 +21,71 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
-.container:hover
-{
+
+.container:hover {
     transform: translate(10px);
 }
-button{
+
+button {
     padding: 10px;
     display: block;
     margin: 0 auto;
     cursor: pointer;
     border-radius: 10px;
-
 }
-button:hover{
+
+button:hover {
     color: white;
     background-color: black;
     border-radius: 2px;
     transform: translate(10px);
 }
-#form input[type="text"], input[type="password"]{
+
+#form input[type="text"],
+#form input[type="password"] {
     padding: 10px;
     margin: 0 auto;
     display: block;
-    width: 75%;
+    width: 100%; /* Change width to 100% to make it responsive */
     border-radius: 10px;
     text-align: center;
     font-weight: bolder;
     border: 2px solid black;
 }
-h1{
+
+h1 {
     text-align: center;
     font-weight: 900;
-    font-family: 'poppins' sans-serif;
+    font-family: 'poppins', sans-serif;
 }
-.links{
+
+.links {
     display: block;
     margin: 0 auto;
 }
 
-.links a{
+.links a {
     text-decoration: none;
     display: block;
     margin: 0 auto;
     text-align: center;
     background-color: burlywood;
-    width: 50%;
+    width: 100%; /* Change width to 100% to make it responsive */
     font-family: 'poppins', sans-serif;
     border: 2px dotted red;
+}
+
+/* Add media queries for different screen sizes */
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        margin: 10px auto;
+        max-width: 90%;
+    }
 }
