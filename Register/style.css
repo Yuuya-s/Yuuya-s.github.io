@@ -1,34 +1,60 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-  body{
-    background-image: linear-gradient( to right, yellow ,green );
+
+body {
+  background-image: linear-gradient(to right, yellow, green);
+}
+
+.container {
+  background-color: orangered;
+  width: 90%; /* Change width to a percentage to make it responsive */
+  max-width: 400px; /* Add a max-width to limit container size */
+  margin: 120px auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  padding: 10px;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+}
+
+#form input[type="text"],
+#form input[type="tel"],
+#form input[type="email"],
+#form input[type="password"] {
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+  width: 90%; /* Change width to a percentage to make it responsive */
+  max-width: 300px; /* Add a max-width for better responsiveness on smaller screens */
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bolder;
+  border: 2px solid black;
+}
+
+/* Add media queries for different screen sizes */
+@media screen and (max-width: 768px) {
+  .container {
+      margin: 20px auto;
+      max-width: 80%;
   }
-  .container{
-    background-color: orangered;
-    width: 25%;
-    margin: 120px auto;
-    padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+      margin: 10px auto;
+      max-width: 90%;
   }
-  button{
-    display: block;
-    padding: 10px;
-    margin: 0 auto;
-    cursor: pointer;
-    border-radius: 10px;
-  }
-  h1{
-    text-align: center;
-    font-weight: 900;
-  }
-  #form input[type="text"], input[type="text"], input[type="tel"], input[type=email], input[type=password], input[type=password]{
-    padding: 10px;
-    margin: 0 auto;
-    display: block;
-    width: 75%;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: bolder;
-    border: 2px solid black;
-  }
+}
