@@ -46,7 +46,7 @@ button:hover {
     padding: 10px;
     margin: 0 auto;
     display: block;
-    width: 100%; /* Change width to 100% to make it responsive */
+    width: 70%; /* Change width to 100% to make it responsive */
     border-radius: 10px;
     text-align: center;
     font-weight: bolder;
@@ -70,7 +70,7 @@ h1 {
     margin: 0 auto;
     text-align: center;
     background-color: burlywood;
-    width: 100%; /* Change width to 100% to make it responsive */
+    width: 50%; /* Change width to 100% to make it responsive */
     font-family: 'poppins', sans-serif;
     border: 2px dotted red;
 }
