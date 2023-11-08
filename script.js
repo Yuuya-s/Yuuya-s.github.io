@@ -6,6 +6,4 @@ document.getElementById("form").addEventListener('submit', function(event){
     alert(error);
     event.preventDefault;
    }
-   
-  
 })
