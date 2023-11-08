@@ -1,42 +1,64 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
- body{
-    background-image: linear-gradient(to right,red,orange,yellow);
- }
- .container{
-    background-color: #efeeefd1;
-    width: 25%;
-    padding: 10px;
-    margin: 120px auto;
-    border-radius: 10px;
-    box-sizing: border-box;
-    box-shadow: 10px 10px 5px rgb(red, green, blue);
- }
-  button{
-    padding: 10px;
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;
-    border-radius: 10px;
+
+body {
+  background-image: linear-gradient(to right, red, orange, yellow);
+}
+
+.container {
+  background-color: #efeeefd1;
+  width: 90%; /* Change width to a percentage to make it responsive */
+  max-width: 400px; /* Add a max-width to limit container size */
+  padding: 10px;
+  margin: 120px auto;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 5px rgb(255, 0, 0); /* Use valid RGB values */
+}
+
+button {
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  color: aqua;
+  background-color: black;
+  border-radius: 10px;
+}
+
+#form input[type="tel"],
+#form input[type="email"] {
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+  width: 90%; /* Change width to a percentage to make it responsive */
+  max-width: 300px; /* Add a max-width for better responsiveness on smaller screens */
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bolder;
+  border: 2px solid black;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+}
+
+/* Add media queries for different screen sizes */
+@media screen and (max-width: 768px) {
+  .container {
+      margin: 20px auto;
   }
-  button:hover{
-    color: aqua;
-    background-color: black;
-    border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+      margin: 10px auto;
   }
-  #form input[type="tel"], input[type="email"]{
-    padding: 10px;
-    margin: 0 auto;
-    display: block;
-    width: 75%;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: bolder;
-    border: 2px solid black;
-  }
-  h1{
-    text-align: center;
-    font-weight: 900;
-  }
+}
