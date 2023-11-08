@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ body{
+    background-image: linear-gradient(to right, red, blue);
+ }
+ .container{background-color: aqua;
+    width: 25%;
+    margin: 120px auto; 
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 5px rgb(82, 21, 3);
+    transition-duration: 2s;
+    border-radius: 20px;
+    animation-name: animate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.container:hover
+{
+    transform: translate(10px);
+}
+button{
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+button:hover{
+    color: white;
+    background-color: black;
+    border-radius: 2px;
+    transform: translate(10px);
+}
+#form input[type="text"], input[type="password"]{
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+    width: 75%;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bolder;
+    border: 2px solid black;
+}
+h1{
+    text-align: center;
+    font-weight: 900;
+    font-family: 'poppins' sans-serif;
+}
+.links{
+    display: block;
+    margin: 0 auto;
+}
+
+.links a{
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: burlywood;
+    width: 50%;
+    font-family: 'poppins', sans-serif;
+    border: 2px dotted red;
+}
