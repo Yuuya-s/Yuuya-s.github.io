@@ -18,6 +18,9 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 20px 7%;
+    top: 0;
+    z-index: 100;
+    background: #000;
 }
 
 .logo {
@@ -233,6 +236,37 @@ nav {
     align-items: center;
     margin: 0 auto;
 }
+.footer a{
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+}
+.footer hr{
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0 ;
+}
+.footer p{
+    padding-bottom: 15px;
+}
+.active{
+    position: relative;
+}
+.active::after{
+    content: '';
+    background: #fff;
+    height: 2px;
+    width: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+}
+
 /* Add media queries for different screen sizes
 @media screen and (max-width: 768px) {
     .nav-links li {
