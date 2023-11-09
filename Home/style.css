@@ -21,6 +21,9 @@ nav {
     top: 0;
     z-index: 100;
     background: #000;
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 0.5s;
 }
 
 .logo {
@@ -273,7 +276,7 @@ nav img {
     display: fixed;
 }
 
-/* Add media queries for different screen sizes
+Add media queries for different screen sizes
 @media screen and (max-width: 768px) {
     .nav-links li {
         margin: 10px 15px;
@@ -290,4 +293,7 @@ nav img {
     .exclusives {
         grid-gap: 15px;
     }
-} */
+    .hidemenu{
+        max-height: 300px;
+    }
+}
