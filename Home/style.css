@@ -31,12 +31,13 @@ nav {
 .nav-links li {
     list-style: none;
     display: inline-block;
-    margin: 10px 20px; /* Adjust margin for smaller screens */
+    margin: 10px 20px;
 }
 
 .nav-links li a {
     text-decoration: none;
     color: #fff;
+
 }
 
 .register-btn {
@@ -265,6 +266,10 @@ nav {
     transform: translate(-50%);
     bottom: -12px;
     border-radius: 2px;
+}
+nav img {
+    width: 50px;
+    cursor: pointer;
 }
 
 /* Add media queries for different screen sizes
