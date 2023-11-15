@@ -1,3 +1,6 @@
+<?php
+  include("connect.php")
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-    <form id="form">
+    <form id="form" action="index.php" method="POST">
      <h1>Registration</h1>
      <input type="text" id="first" placeholder="Firstname" autofocus ><br><br>
      <input type="text" id="second" placeholder="Secondname" autofocus ><br><br>

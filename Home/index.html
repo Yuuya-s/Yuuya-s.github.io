@@ -11,13 +11,15 @@
     <div class="header">
     <nav id="navBar">
        <img src="../Pictures/hotellogo.jpeg"  class="logo">
+       <a href="../Register/index.html" class="register-btn">Register Now</a><br>
+      <div class="menu-content">
+       <a href="#" class="menu-btn"><img src="../Pictures/menuicon.png" ></a>
        <ul class="nav-links">
         <li><a href="#" class="active">Popular Places</a></li>
         <li><a href="#">Travel Outside</a></li>
         <li><a href="#">Packages </a></li>
        </ul>
-       <a href="../Register/index.html" class="register-btn">Register Now</a>
-       <img src="../Pictures/menuicon.png"  onclick="togglebtn()">
+      </div>
     </nav>
     <div class="div container">
         <h1>Find Your Stay</h1>
@@ -174,13 +176,7 @@
     <hr>
     <p> copyright @ 2021, Suncity Hotels</p>
 </div>
-</div><script>
-   var  navBar = document.getElementById("navBar");
-
-   function togglebtn(){
-    navBar.classList.toggle("hidemenu");
-   }
-</script>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
